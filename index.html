@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="start-screen">
+        <div class="start-screen hide">
             <h1 class="heading">Quiz App</h1>
             <div class="settings">
                 <label for="num-ques">Number Of Questions</label>
@@ -52,6 +52,27 @@
                     </select>
             </div>
             <button class="btn start">Lets Start</button>
+        </div>
+        <div class="quiz">
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">50</span>
+                </div>
+            </div>
+            <div class="ques-wrapper">
+                <div class="number">
+                    Question <span class="current">1</span>
+                <span class="total">/10</span>
+                </div>
+                <div class="ques">This is a Question</div>
+            </div>
+            <div class="answer-wrapper">
+                <div class="answer">
+                    <span class="text">answer</span>
+                    <span class="checkbox">🗸</span>
+                </div>
+            </div>
         </div>
     </div>
 
