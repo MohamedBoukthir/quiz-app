@@ -164,3 +164,57 @@ select {
     justify-content: center;
     transition: all 0.3s;
 }
+
+.answer .checkbox .icon {
+    opacity: 0;
+}
+
+.answer:hover .checkbox,
+.answer.selected .checkbox {
+    background-color: #21a8a8;
+    border-color: #21a8a8;
+}
+
+.answer.selected .checkbox .icon {
+    opacity: 1;
+}
+
+.answer.correct {
+    border-color: #0cef2a;
+}
+
+.answer.wrong {
+    border-color: #fc3939;
+}
+
+.ques-wrapper,
+.answer-wrapper {
+    margin-bottom: 50px;
+}
+
+.btn.next {
+    /* Only when submit  */
+    display: none;
+}
+
+.end-screen .score {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.end-screen .score-text {
+    color: #a2aace;
+    font-size: 16px;
+    margin-bottom: 120px;
+}
+
+@media (max-width: 468) {
+    .container {
+        min-height: 100vh;
+        min-width: 100%;
+        border-radius: 0;
+    }
+}
